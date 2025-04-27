@@ -34,7 +34,7 @@ export default function App() {
     setFriends((friends) => [...friends, friend]);
 
     // b/c we need to hide form after sumbit
-    showAddFriend(false);
+    setShowAddFriend(false);
   }
   return (
     <div className="app">
@@ -121,7 +121,7 @@ function FormAddFriend({ onAddFriend }) {
   }
   return (
     <form className="form-add-friend" onSubmit={handleSubmit}>
-      <label>👯 Friend name</label>
+      <lebel>👯 Friend name</lebel>
       <input
         type="text"
         value={name}
